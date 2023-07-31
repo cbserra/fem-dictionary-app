@@ -14,7 +14,7 @@ const MeaningBody = (props: Props) => {
   const synonyms = meaning.synonyms
   const antonyms = meaning.antonyms
   return (
-    <section key={props.word}>
+    <section className='flex flex-col gap-y-[2.4rem]' key={props.word}>
       { meaning && 
         <div className='flex gap-y-[1.6rem] flex-col' key={meaning.partOfSpeech}>
           <PartOfSpeech partOfSpeech={meaning.partOfSpeech} />

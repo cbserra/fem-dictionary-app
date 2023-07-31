@@ -6,7 +6,7 @@ type Props = {
 const SynonymsComponent = (props: Props) => {
   const synonyms = props.synonyms
   return (
-    <h3 className=''>Synonyms <span>{synonyms.join(", ")}</span></h3>
+    <h3 className=''>Synonyms <span className="syn-ant-list">{synonyms.join(", ")}</span></h3>
   )
 }
 

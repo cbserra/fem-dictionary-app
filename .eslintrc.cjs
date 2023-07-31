@@ -14,5 +14,17 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // "import/order": [
+    //   "warn",
+    // ],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "args": "after-used",
+        "ignoreRestSiblings": false,
+        "argsIgnorePattern": "^_.*?$"
+      }
+    ],
   },
 }

@@ -41,6 +41,8 @@ const tailwindConfig = {
       bodyM: ['1.8rem', '2.4rem',],
       bodyS: ['1.5rem', '2.4rem'],
       bodyXS: ['1.4rem', '1.7rem'],
+      inputS: ['1.6rem', '1.5rem'],
+      fontToggleS: ['1.4rem', '2.4rem'],
       base: '62.5%',
     },
     fontWeight: {

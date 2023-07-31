@@ -1,3 +1,4 @@
+import HorizontalLine from "./HorizontalLine"
 
 type Props = {
   partOfSpeech: string
@@ -8,7 +9,8 @@ const PartOfSpeech = (props: Props) => {
   return (
     <div className="part-of-speech--wrapper flex justify-center items-center gap-x-[2rem]">
       <h2 className='inline-flex'>{partOfSpeech}</h2>
-      <div className="hor-line h-[.1rem] bg-gray-200 w-full"></div>
+      <HorizontalLine />
+      {/* <div className="hor-line h-[.1rem] bg-gray-200 w-full"></div> */}
     </div>
   )
 }

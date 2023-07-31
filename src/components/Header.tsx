@@ -1,6 +1,9 @@
 import { ReactComponent as Logo } from '@/Assets/images/logo.svg'
-import { ReactComponent as IconArrowDown } from '@/Assets/images/icon-arrow-down.svg'
 import ToggleMode from './toggle-mode/ToggleMode'
+import  useTheme  from '../hooks/useTheme'
+import cx from 'classnames'
+import SetFont from './toggle-mode/SetFont'
+
 
 type Props = {
   fonts: string[]
@@ -10,16 +13,16 @@ type Props = {
 }
 
 const Header = (props: Props) => {
+  // const { currentFontFace, setCurrentFontFace } = useTheme();
+
   return (
     <header className='flex w-full items-center justify-center'>
       <div className='logo mr-auto'>
         <Logo className='w-[2.8rem] h-[3.2rem]' />
       </div>
       <div className='font-theme-select flex'>
-        <div className='font-select flex border-r-gray-400 border-r-[1px] pr-[1.6rem] gap-x-[1.6rem] justify-center items-center'>
-          <div className='current-font'>{props.currentFont}</div>
-          <div className='icon-arrow'><IconArrowDown /></div>
-        </div>
+        {/* <div className='current-font text-fontToggleS'>{props.currentFont}</div> */}
+        <SetFont  />
         <ToggleMode />
       </div>
     </header>
